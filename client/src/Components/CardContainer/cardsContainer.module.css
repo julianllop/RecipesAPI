@@ -1,10 +1,10 @@
 .cardcontainer {
-	width: 70vw;
+	width: 80vw;
 	display: flex;
 	/* flex-direction: row; */
 	border-radius: 15px;
 	flex-wrap: wrap;
-	gap: 1em;
+	gap: 30px;
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 40px;
@@ -12,4 +12,8 @@
 .link {
 	text-decoration: none;
 	color:#723D46;
+}
+
+.container{
+	width: 275px;
 }

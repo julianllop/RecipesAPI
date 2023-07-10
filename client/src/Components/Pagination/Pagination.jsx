@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Pagination.module.css";
 
 export default function Paginate({ currentPage, allRecipes, paginate }) {
-    const totalPages = Math.ceil(allRecipes / 9); // Total de páginas
+    const totalPages = Math.ceil(allRecipes / 10); // Total de páginas
 
     let numbers = [];
     let startPage = 1;

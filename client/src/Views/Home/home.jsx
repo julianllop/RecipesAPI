@@ -38,7 +38,7 @@ const Home = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const currentRecipes =
         allRecipes &&
-        allRecipes.slice((currentPage - 1) * 9, (currentPage - 1) * 9 + 9);
+        allRecipes.slice((currentPage - 1) * 10, (currentPage - 1) * 10 + 10);
 
     //CARGAR TODO*************************************************
     function loadRecipes() {

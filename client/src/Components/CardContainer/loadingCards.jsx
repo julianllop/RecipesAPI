@@ -76,7 +76,14 @@ const LoadingCards = () => {
                     <span className={style.diets}></span>
                 </div>
             </div>
-            
+            <div className={style.loading}>
+                <span className={style.image}></span>
+
+                <div className={style.info}>
+                    <span className={style.title}></span>
+                    <span className={style.diets}></span>
+                </div>
+            </div>
         </div>
     );
 };
