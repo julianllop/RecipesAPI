@@ -15,7 +15,7 @@ const NavBar = () => {
                         color: isActive ? "#d13017" : "#8e1300",
 
                         "font-size": isActive ? "x-large" : "large",
-                        "text-decoration": isActive ? "underline" : "none"
+                        "text-decoration": isActive ? "underline" : "none",
                     })}
                 >
                     New Recipe
@@ -27,12 +27,12 @@ const NavBar = () => {
                         color: isActive ? "#d13017" : "#8e1300",
 
                         "font-size": isActive ? "x-large" : "large",
-                        "text-decoration": isActive ? "underline" : "none"
+                        "text-decoration": isActive ? "underline" : "none",
                     })}
                 >
                     Home
                 </NavLink>
-                <NavLink
+                {/* <NavLink
                     to="/about"
                     style={(isActive) => ({
                         color: isActive ? "#d13017" : "#8e1300",
@@ -42,7 +42,7 @@ const NavBar = () => {
                     })}
                 >
                     About
-                </NavLink>
+                </NavLink> */}
             </div>
             {location.pathname === "/home" && <SearchBar />}
         </div>
