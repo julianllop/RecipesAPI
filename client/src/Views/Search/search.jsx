@@ -21,17 +21,25 @@ export default function SearchBar() {
         setInput("")
     }
 
+    function handleKeyPress(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            handleSubmit(event);
+        }
+    }
+
 
     return (
         <div className={styles.container}>
             <input
                 value={input}
                 type="text"
-                placeholder="Buscar..."
+                placeholder="Search a recipe..."
                 onChange={(event) => handleInputChange(event)}
                 className={styles.input}
+                onKeyDown={handleKeyPress}
             />
-            <button type="submit" onClick={(event) => handleSubmit(event)} className={styles.boton}>Buscar</button>
+            <button type="submit" onClick={(event) => handleSubmit(event)} className={styles.boton}>Search</button>
         </div>
     )
 }

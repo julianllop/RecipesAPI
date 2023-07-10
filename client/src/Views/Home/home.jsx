@@ -148,18 +148,17 @@ const Home = () => {
             </div>
 
             <div className={style.pages}>
-                <Paginate
-                    currentPage={currentPage}
-                    allRecipes={allRecipes ? allRecipes.length : 0}
-                    paginate={setCurrentPage}
-                />
-
                 {loading ? (
                     <LoadingCards />
                 ) : (
                     <CardsContainer recipes={currentRecipes} />
                 )}
             </div>
+            <Paginate
+                currentPage={currentPage}
+                allRecipes={allRecipes ? allRecipes.length : 0}
+                paginate={setCurrentPage}
+            />
         </div>
     );
 };
