@@ -1,0 +1,15 @@
+.cardcontainer {
+	width: 70%;
+	display: flex;
+	/* flex-direction: row; */
+	border-radius: 15px;
+	flex-wrap: wrap;
+	gap: 1em;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+.link {
+	text-decoration: none;
+	color:#723D46;
+}

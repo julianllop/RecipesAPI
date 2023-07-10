@@ -1,0 +1,69 @@
+.Pagination {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	gap: 0.2em;
+	margin-bottom: 40px;
+}
+
+.current {
+	background-color: #723d4636;
+	border: 2px solid #723D46;
+	border-radius: 5px;
+	color: #723D46;
+	font-weight: bold;
+	border-radius: 25px;
+	width: 40px;
+}
+
+.current:hover {
+	cursor: pointer;
+	
+}
+
+.btn {
+	background-color: transparent;
+	border: 1px solid #723d4696;
+	border-radius: 25px;
+	color: #723D46;
+	font-weight: bold;
+	width: 40px;
+}
+
+.btnDisabled{
+	background-color: transparent;
+	border: 1px solid #723d4600;
+	border-radius: 25px;
+	color: #723D46;
+	font-weight: bold;
+	width: 40px;
+	cursor: default;
+}
+
+.btn:hover {
+	cursor: pointer;
+	transform:scale(0.9);
+	background-color: #723d46b9;
+	color: #EEE0CB;
+	transition: all 150ms;
+}
+
+.direction{
+	background-color: transparent;
+	border: 2px solid #723d4696;	
+	border-radius: 25px;
+	color: #723D46;
+	font-weight: bold;
+	padding: 10px;
+	cursor: pointer;
+	width: 100px;
+}
+
+.direction:hover{
+	transform:scale(0.98);
+	background-color: #723d46b9;
+	color: #EEE0CB;
+	transition: all 150ms;
+}
+
+

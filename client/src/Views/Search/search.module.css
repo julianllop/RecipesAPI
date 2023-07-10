@@ -1,0 +1,27 @@
+.boton {
+	background-color: #ff847153;
+	border-radius: 25px;
+	border: solid 2px #8e1300;
+	color:  #8e1300;
+	width: 100px;
+
+}
+
+.container {	
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+}
+
+.input {
+	width: 300px;
+	height: 25px;
+	padding-left: 10px;
+	background-color: #ff847153;
+	border-radius: 25px;
+	border: solid 2px #8e1300;
+	color:  #8e1300;
+}
+
+
+

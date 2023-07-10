@@ -1,0 +1,50 @@
+.landing{
+	margin-top: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffe6d2b5;
+	width: 55%;
+	height: 400px;
+	border-radius: 50px;
+	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.bienvenido {
+	color: #E26D5C;
+	font-weight: bold;
+	font-size: 20px;
+	
+}
+
+.boton {
+	
+	background-color: #E26D5C;
+	cursor: pointer;
+	border: solid 2px transparent;
+	padding: 16px 32px;
+	color: #fff;
+	font-weight: bold;
+	position: relative;
+	border-radius: 35px;
+	font-size: x-large;
+
+}
+
+.boton:hover{
+	border: solid 3px#E26D5C;
+	transform:scale(1.1);
+	background-color: #e26e5c4e;
+	color: #E26D5C;
+	transition: all 10ms;
+}
+
+

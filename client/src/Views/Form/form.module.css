@@ -1,0 +1,155 @@
+.title{
+	color: #8e1300;
+	margin: 0;
+	padding: 0;
+}
+.label{
+	color: #8e1300;
+	margin: 0;
+	padding: 0;
+	padding-left: 13px;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.inForm{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.inputCont{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+	margin: 0;
+	padding: 0;
+}
+
+.inputCont p {
+	color: #ff0059;
+	margin: 0;
+	padding: 0;
+	padding-left: 12px;
+	font-size: 14px;
+}
+
+.input {
+	height: 40px;
+	border-radius: 50px;
+	padding-left: 10px;
+	background-color: #ff847153;
+	color:  #8e1300;
+	border: solid 2px #8e1300;
+	width: 300px;
+	font-size: medium;
+}
+
+.input:focus{
+	transform: scale(1.02);
+	outline: none !important;
+}
+
+
+.input::placeholder{
+	color:  #8e1300;
+
+}
+
+
+.form {
+	background-color: #ffe6d2;
+	width: 20%;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 100px;
+	border: solid 2px #8e1300;
+	border-radius: 25px;
+}
+
+.temps {
+	background-color: antiquewhite;
+}
+
+.selectedItems {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	background-color: rgba(255, 255, 255, 0);
+	border-radius: 35px;
+	gap: 10px;
+	height: 10px;
+	padding: 15px;
+	margin-left: 5px;
+	border: solid 2px #8e1300;
+}
+.selectedItems p{
+	color: #8e1300;
+	font-weight: 500;
+	font-size: medium;
+}
+
+.x {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	background-color: #bc1900;
+	color: #ffe6d2;
+	border: solid #bc1900;
+}
+.x:hover {
+	cursor: pointer;
+	transform: scale(0.98);
+	transition: 50ms;
+}
+
+.sidebar_box {
+	/* margin-left: 600px; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 5px;
+}
+
+.sidebar_box h4{
+	color: #8e1300;
+	font-weight: 300;
+	font-size: medium;
+}
+
+.boton {
+	margin-top: 30px;
+	/* margin-left: 700px;
+	margin-bottom: 20px; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	cursor: pointer;
+	height: 50px;
+	width: 200px;
+	border-radius: 15px;
+	border: none;
+	font-size: 13px;
+	font-weight: 600;
+	background-color: #ff847153;
+	color:  #bc1900;
+	border: solid 2px #bc1900;
+}
+
+
+
