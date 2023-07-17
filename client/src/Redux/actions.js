@@ -15,7 +15,7 @@ import {
 
 export const getRecipe = (id) => {
     return (dispatch) =>
-        fetch(`http://localhost:3001/recipes/${id}`)
+        fetch(`https://recipes-api-julianllop-back.onrender.com/recipes/${id}`)
             .then((resp) => resp.json())
             .then((recipe) => {
                 dispatch({
