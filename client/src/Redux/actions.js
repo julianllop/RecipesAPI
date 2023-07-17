@@ -14,18 +14,30 @@ import {
 } from "./actionTypes";
 
 export const getRecipe = (id) => {
-    return (dispatch) =>
-        fetch(`https://recipes-api-julianllop-back.onrender.com/recipes/${id}`)
-            .then((resp) => resp.json())
-            .then((recipe) => {
-                dispatch({
-                    type: GET_RECIPE,
-                    payload: recipe,
-                });
-            })
-            .catch((err) => {
-                console.log(err);
+    return async (dispatch) => {
+        try {
+            const apiData = await axios.get(`/recipes/${id}`);
+            const recipes = apiData.data;
+            return dispatch({
+                type: GET_RECIPE,
+                payload: recipe,
             });
+        } catch (error) {
+            console.log("Ocurrio un error: ", error);
+        }
+    };
+    // return (dispatch) =>
+    //     fetch(`https://recipes-api-julianllop-back.onrender.com/recipes/${id}`)
+    //         .then((resp) => resp.json())
+    //         .then((recipe) => {
+    //             dispatch({
+    //                 type: GET_RECIPE,
+    //                 payload: recipe,
+    //             });
+    //         })
+    //         .catch((err) => {
+    //             console.log(err);
+    //         });
 };
 
 export const clearState = () => {
