@@ -17,7 +17,7 @@ export const getRecipe = (id) => {
     return async (dispatch) => {
         try {
             const apiData = await axios.get(`/recipes/${id}`);
-            const recipes = apiData.data;
+            const recipe = apiData.data;
             return dispatch({
                 type: GET_RECIPE,
                 payload: recipe,
