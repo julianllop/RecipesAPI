@@ -21,7 +21,7 @@ const NavBar = () => {
                 </NavLink>
 
                 <NavLink
-                    to="/"
+                    to="/home"
                     className={style["small-links"]}
                     style={(isActive) => ({
                         color: isActive ? "#d13017" : "#8e1300",
