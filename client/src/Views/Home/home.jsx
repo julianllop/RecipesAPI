@@ -12,6 +12,11 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import style from "./home.module.css";
 import LoadingCards from "../../Components/CardContainer/loadingCards";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select, { SelectChangeEvent } from "@mui/material/Select";
+import { Button } from "@mui/material";
 
 const Home = () => {
     const dispatch = useDispatch();
@@ -79,71 +84,60 @@ const Home = () => {
                     <button onClick={loadRecipes} className={style.button}>
                         All Recipes
                     </button>
-                    <div>
-                        {/* <h4 className={style.titles}>Order by Score</h4> */}
-                        <select
-                            onChange={(e) => handleSortByScore(e)}
-                            className={style.botons}
-                        >
-                            <option value="" default>
-                                Order by Health Score:
-                            </option>
-                            <option value="asc_score" className={style.option}>
-                                Score (Lower-Higher)
-                            </option>
-                            <option value="desc_score" className={style.option}>
-                                Score (Higher-Lower)
-                            </option>
-                        </select>
-                    </div>
 
-                    <div>
-                        {/* <h4 className={style.titles}>Order by Name</h4> */}
-                        <select
-                            onChange={(event) => handleSortByName(event)}
-                            className={style.botons}
-                        >
-                            <option value="" default>
-                                Order by Name:
-                            </option>
-                            <option value="asc_name" className={style.option}>
-                                Alphabetically (A-Z)
-                            </option>
-                            <option value="desc_name" className={style.option}>
-                                Alphabetically (Z-A)
-                            </option>
-                        </select>
-                    </div>
+                    <select
+                        onChange={(e) => handleSortByScore(e)}
+                        className={style.botons}
+                    >
+                        <option value="" default>
+                            Order by Health Score:
+                        </option>
+                        <option value="asc_score" className={style.option}>
+                            Score (Lower-Higher)
+                        </option>
+                        <option value="desc_score" className={style.option}>
+                            Score (Higher-Lower)
+                        </option>
+                    </select>
 
-                    <div>
-                        {/* <h4 className={style.titles}>Filter by Origin</h4> */}
-                        <select
-                            onChange={(event) => handleFilterByCreator(event)}
-                            className={style.botons}
-                        >
-                            <option value="All" default>
-                                All Creators:
-                            </option>
-                            <option value="Api">Api</option>
-                            <option value="DB">Data Base</option>
-                        </select>
-                    </div>
+                    <select
+                        onChange={(event) => handleSortByName(event)}
+                        className={style.botons}
+                    >
+                        <option value="" default>
+                            Order by Name:
+                        </option>
+                        <option value="asc_name" className={style.option}>
+                            Alphabetically (A-Z)
+                        </option>
+                        <option value="desc_name" className={style.option}>
+                            Alphabetically (Z-A)
+                        </option>
+                    </select>
 
-                    <div>
-                        {/* <h4 className={style.titles}>Filter by Diets</h4> */}
-                        <select
-                            onChange={(event) => handleFilterByDiet(event)}
-                            className={style.botons}
-                        >
-                            <option value="All">All Diets:</option>
-                            {allDiets &&
-                                allDiets.map((diet, i) => (
-                                    <option value={diet.name} key={i}>
-                                        {diet}
-                                    </option>
-                                ))}
-                        </select>
-                    </div>
+                    <select
+                        onChange={(event) => handleFilterByCreator(event)}
+                        className={style.botons}
+                    >
+                        <option value="All" default>
+                            All Creators:
+                        </option>
+                        <option value="Api">Api</option>
+                        <option value="DB">Data Base</option>
+                    </select>
+
+                    <select
+                        onChange={(event) => handleFilterByDiet(event)}
+                        className={style.botons}
+                    >
+                        <option value="All">All Diets:</option>
+                        {allDiets &&
+                            allDiets.map((diet, i) => (
+                                <option value={diet.name} key={i}>
+                                    {diet}
+                                </option>
+                            ))}
+                    </select>
                 </div>
             </div>
 

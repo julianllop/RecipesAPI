@@ -2,7 +2,7 @@
 	background-color: #ff847153;
 	border-radius: 25px;
 	border: solid 2px #8e1300;
-	color:  #8e1300;
+	color:  #390800;
 	width: 100px;
 
 }
@@ -11,6 +11,7 @@
 	display: flex;
 	justify-content: flex-end;
 	gap: 10px;
+	width: 50%;
 }
 
 .input {

@@ -53,7 +53,7 @@ export default function Paginate({ currentPage, allRecipes, paginate }) {
                 {"<<<"}
             </button>
             <button className={styles.direction} onClick={handlerAtras}>
-                {"< Previous"}
+                {"<"}
             </button>
             {/* {startPage > 1 && (
         <>
@@ -87,7 +87,7 @@ export default function Paginate({ currentPage, allRecipes, paginate }) {
                 </button>
             )}
             <button className={styles.direction} onClick={handlerAdelante}>
-                {"Next >"}
+                {">"}
             </button>
             <button className={styles.direction} onClick={handlerLast}>
                 {">>>"}
