@@ -11,6 +11,7 @@ const NavBar = () => {
             <div className={style.links}>
                 <NavLink
                     to="/create"
+                    className={style["small-links"]}
                     style={(isActive) => ({
                         color: isActive ? "#d13017" : "#8e1300",
                         "text-decoration": isActive ? "underline" : "none",
@@ -20,7 +21,7 @@ const NavBar = () => {
                 </NavLink>
 
                 <NavLink
-                    to="/home"
+                    to="/"
                     className={style["small-links"]}
                     style={(isActive) => ({
                         color: isActive ? "#d13017" : "#8e1300",
@@ -30,7 +31,7 @@ const NavBar = () => {
                     Home
                 </NavLink>
             </div>
-            {location.pathname === "/home" && <SearchBar />}
+            {location.pathname === "/" && <SearchBar />}
         </div>
     );
 };
