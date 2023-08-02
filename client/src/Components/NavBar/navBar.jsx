@@ -10,7 +10,7 @@ const NavBar = () => {
         <div id="NavBar" className={style.navBar}>
             <div className={style.links}>
                 <NavLink
-                    to="/create"
+                    to="/RecipesAPI/create"
                     className={style["small-links"]}
                     style={(isActive) => ({
                         color: isActive ? "#d13017" : "#8e1300",
@@ -21,7 +21,7 @@ const NavBar = () => {
                 </NavLink>
 
                 <NavLink
-                    to="/home"
+                    to="/RecipesAPI/home"
                     className={style["small-links"]}
                     style={(isActive) => ({
                         color: isActive ? "#d13017" : "#8e1300",
@@ -31,7 +31,7 @@ const NavBar = () => {
                     Home
                 </NavLink>
             </div>
-            {location.pathname === "/home" && <SearchBar />}
+            {location.pathname === "/RecipesAPI/home" && <SearchBar />}
         </div>
     );
 };

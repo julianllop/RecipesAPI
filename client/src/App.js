@@ -9,16 +9,16 @@ function App() {
     return (
         <div className="App">
             <Route
-                path={["/home", "/recipes", "/about", "/addrecipes", "/create"]}
+                path={["/RecipesAPI/home", "/recipes", "/about", "/addrecipes", "/RecipesAPI/create"]}
                 component={NavBar}
             />
             <Route exact path="/RecipesAPI" component={Landing} />
 
-            <Route path="/home" render={() => <Home />} />
+            <Route path="/RecipesAPI/home" render={() => <Home />} />
 
             <Route
                 exact
-                path="/recipes/:id"
+                path="/RecipesAPI/recipes/:id"
                 render={({ match }) => <Detail id={match.params.id} />}
             />
             <Route path="/create" render={() => <Form />} />
