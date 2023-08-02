@@ -3,7 +3,7 @@ import { Route, useLocation } from "react-router-dom";
 import { Home, Landing, Form, Detail } from "./Views";
 import NavBar from "./Components/NavBar/navBar";
 import axios from "axios";
-axios.defaults.baseURL = "http://localhost:3001";
+axios.defaults.baseURL = "https://recipes-back.onrender.com";
 
 function App() {
     return (
@@ -12,7 +12,7 @@ function App() {
                 path={["/home", "/recipes", "/about", "/addrecipes", "/create"]}
                 component={NavBar}
             />
-            <Route exact path="/RecipesAPI" component={Landing} />
+            <Route exact path="/" component={Landing} />
 
             <Route path="/home" render={() => <Home />} />
 
