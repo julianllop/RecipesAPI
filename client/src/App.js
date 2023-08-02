@@ -6,16 +6,13 @@ import axios from "axios";
 axios.defaults.baseURL = "https://recipes-api-julianllop-back.onrender.com/";
 
 function App() {
-    const location = useLocation();
-
     return (
         <div className="App">
-            {location.pathname !== "/" && <NavBar />}
             <Route
                 path={["/home", "/recipes", "/about", "/addrecipes", "/create"]}
                 component={NavBar}
             />
-            <Route exact path="/" component={Landing} />
+            <Route exact path="/RecipesAPI" component={Landing} />
 
             <Route path="/home" render={() => <Home />} />
 

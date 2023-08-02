@@ -31,7 +31,7 @@ const NavBar = () => {
                     Home
                 </NavLink>
             </div>
-            {location.pathname === "/" && <SearchBar />}
+            {location.pathname === "/home" && <SearchBar />}
         </div>
     );
 };

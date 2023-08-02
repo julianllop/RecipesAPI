@@ -26,18 +26,6 @@ export const getRecipe = (id) => {
             console.log("Ocurrio un error: ", error);
         }
     };
-    // return (dispatch) =>
-    //     fetch(`https://recipes-api-julianllop-back.onrender.com/recipes/${id}`)
-    //         .then((resp) => resp.json())
-    //         .then((recipe) => {
-    //             dispatch({
-    //                 type: GET_RECIPE,
-    //                 payload: recipe,
-    //             });
-    //         })
-    //         .catch((err) => {
-    //             console.log(err);
-    //         });
 };
 
 export const clearState = () => {
