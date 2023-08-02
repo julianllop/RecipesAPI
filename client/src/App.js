@@ -3,22 +3,22 @@ import { Route, useLocation } from "react-router-dom";
 import { Home, Landing, Form, Detail } from "./Views";
 import NavBar from "./Components/NavBar/navBar";
 import axios from "axios";
-axios.defaults.baseURL = "https://recipes-api-julianllop-back.onrender.com/";
+axios.defaults.baseURL = "http://localhost:3001";
 
 function App() {
     return (
         <div className="App">
             <Route
-                path={["/RecipesAPI/home", "/recipes", "/about", "/addrecipes", "/RecipesAPI/create"]}
+                path={["/home", "/recipes", "/about", "/addrecipes", "/create"]}
                 component={NavBar}
             />
             <Route exact path="/RecipesAPI" component={Landing} />
 
-            <Route path="/RecipesAPI/home" render={() => <Home />} />
+            <Route path="/home" render={() => <Home />} />
 
             <Route
                 exact
-                path="/RecipesAPI/recipes/:id"
+                path="/recipes/:id"
                 render={({ match }) => <Detail id={match.params.id} />}
             />
             <Route path="/create" render={() => <Form />} />

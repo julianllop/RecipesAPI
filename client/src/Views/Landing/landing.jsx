@@ -10,7 +10,7 @@ const Landing = () => {
                     <h1>Welcome to my Food App !</h1>
                 </div>
 
-                <Link to="/RecipesAPI/home">
+                <Link to="/home">
                     <button className={style.boton}>Let's Begin</button>
                 </Link>
             </div>
