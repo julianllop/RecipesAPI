@@ -11,32 +11,26 @@ const server = express();
 
 server.name = "API";
 
-server.use(cors());
+server.use(
+    cors({
+        origin: [
+            "https://recipes-api-jl.onrender.com",
+            "https://recipes-back.onrender.com",
+        ],
+        credentials: true,
+        methods: ["GET", "POST", "OPTIONS", "PUT", "DELETE"],
+        allowedHeaders: [
+            "Origin",
+            "X-Requested-With",
+            "Content-Type",
+            "Accept",
+        ],
+    })
+);
 server.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
 server.use(bodyParser.json({ limit: "50mb" }));
 server.use(cookieParser());
 server.use(morgan("dev"));
-server.use((req, res, next) => {
-    const allowedOrigins = [
-        "https://recipes-api-jl.onrender.com",
-        "https://recipes-back.onrender.com",
-    ];
-    const origin = req.headers.origin;
-    if (allowedOrigins.includes(origin)) {
-        res.header("Access-Control-Allow-Origin", origin);
-    }
-    res.header("Access-Control-Allow-Credentials", "true");
-    res.header(
-        "Access-Control-Allow-Headers",
-        "Origin, X-Requested-With, Content-Type, Accept"
-    );
-    res.header(
-        "Access-Control-Allow-Methods",
-        "GET, POST, OPTIONS, PUT, DELETE"
-    );
-    next();
-});
-
 server.use("/", routes);
 
 // Error catching endware.
