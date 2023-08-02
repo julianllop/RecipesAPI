@@ -18,19 +18,13 @@ server.use(
             "https://recipes-back.onrender.com",
         ],
         credentials: true,
-        methods: ["GET", "POST", "OPTIONS", "PUT", "DELETE"],
-        allowedHeaders: [
-            "Origin",
-            "X-Requested-With",
-            "Content-Type",
-            "Accept",
-        ],
     })
 );
 server.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
 server.use(bodyParser.json({ limit: "50mb" }));
 server.use(cookieParser());
 server.use(morgan("dev"));
+
 server.use("/", routes);
 
 // Error catching endware.
