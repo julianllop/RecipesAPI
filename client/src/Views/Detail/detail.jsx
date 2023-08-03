@@ -17,7 +17,7 @@ function Detail() {
     }, [dispatch, id]);
 
     return (
-        <div>
+        <div className={style.detail}>
             <div className={style.container}>
                 <div className={style.bigCard}>
                     <h1>{recipe.title} </h1>
@@ -27,26 +27,28 @@ function Detail() {
                             src={recipe.image}
                             alt=""
                         />
-                        <h5 className={style.diets}>
-                            Diets:
-                            {recipe.diet &&
-                                recipe.diet.map((diet, i) => (
-                                    <li key={i}>{diet}</li>
-                                ))}
-                        </h5>
-                        <div
-                            className={
-                                recipe.healthScore > 60
-                                    ? style.healthy
-                                    : recipe.healthScore < 40
-                                    ? style.unhealthy
-                                    : style.regular
-                            }
-                        >
-                            <h5 className={style.score}>Healthscore: </h5>
-                            <h3 className={style.score}>
-                                {recipe.healthScore}
-                            </h3>
+                        <div className={style.dietsAndHscore}>
+                            <h5 className={style.diets}>
+                                Diets:
+                                {recipe.diet &&
+                                    recipe.diet.map((diet, i) => (
+                                        <li key={i}>{diet}</li>
+                                    ))}
+                            </h5>
+                            <div
+                                className={
+                                    recipe.healthScore > 60
+                                        ? style.healthy
+                                        : recipe.healthScore < 40
+                                        ? style.unhealthy
+                                        : style.regular
+                                }
+                            >
+                                <h5 className={style.score1}>Healthscore: </h5>
+                                <h3 className={style.score2}>
+                                    {recipe.healthScore}
+                                </h3>
+                            </div>
                         </div>
                     </div>
                     <div className={style.summaryCont}>
@@ -57,12 +59,17 @@ function Detail() {
                         <h2>Step by step:</h2>
                         <ol className={style.steps}>
                             {isNaN(recipe.id)
-                                ? recipe.analyzedInstructions && recipe.analyzedInstructions.split(".").map((step, i) => (
-                                      <li key={i}>
-                                          <p className={style.enum}>{i + 1}.</p>{" "}
-                                          <p>{step}.</p>
-                                      </li>
-                                  ))
+                                ? recipe.analyzedInstructions &&
+                                  recipe.analyzedInstructions
+                                      .split(".")
+                                      .map((step, i) => (
+                                          <li key={i}>
+                                              <p className={style.enum}>
+                                                  {i + 1}.
+                                              </p>{" "}
+                                              <p>{step}.</p>
+                                          </li>
+                                      ))
                                 : Array.isArray(recipe.analyzedInstructions) &&
                                   recipe.analyzedInstructions &&
                                   recipe.analyzedInstructions.map((step, i) => (
