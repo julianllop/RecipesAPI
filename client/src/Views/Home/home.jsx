@@ -18,9 +18,6 @@ import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import { Button } from "@mui/material";
 
-const initialRecipes = JSON.parse(localStorage.getItem("recipes")) || [];
-const initialDiets = JSON.parse(localStorage.getItem("diets")) || [];
-
 const Home = () => {
     const dispatch = useDispatch();
 
@@ -31,48 +28,15 @@ const Home = () => {
     const [orden, setOrden] = useState("");
     const [loading, setLoading] = useState(true);
 
-    const [recipes, setAllRecipes] = useState(initialRecipes);
-    const [diets, setAllDiets] = useState(initialDiets);
-
     useEffect(() => {
-        // Intentamos obtener las recetas guardadas en el local storage
-        const savedRecipes = JSON.parse(localStorage.getItem("recipes"));
+        dispatch(getRecipes())
+            .then(() => setLoading(false)) // Cuando la función getRecipes() se resuelve, se establece el estado de carga en falso
+            .catch((error) => {
+                console.error("Error fetching recipes:", error);
+                setLoading(false); // En caso de error, también se establece el estado de carga en falso
+            });
 
-        // Si hay recetas guardadas en el local storage, las establecemos en el estado
-        if (savedRecipes && savedRecipes.length > 0) {
-            setAllRecipes(savedRecipes);
-            setLoading(false); // Cambiamos el estado de carga a falso
-        } else {
-            // Si no hay recetas guardadas en el local storage, las obtenemos de la API
-            dispatch(getRecipes())
-                .then((data) => {
-                    setAllRecipes(data); // Establecemos las recetas en el estado
-                    localStorage.setItem("recipes", JSON.stringify(data)); // Guardamos las recetas en el local storage
-                    setLoading(false); // Cambiamos el estado de carga a falso
-                })
-                .catch((error) => {
-                    console.error("Error fetching recipes:", error);
-                    setLoading(false); // En caso de error, también cambiamos el estado de carga a falso
-                });
-        }
-
-        // Intentamos obtener las dietas guardadas en el local storage
-        const savedDiets = JSON.parse(localStorage.getItem("diets"));
-
-        // Si hay dietas guardadas en el local storage, las establecemos en el estado
-        if (savedDiets && savedDiets.length > 0) {
-            setAllDiets(savedDiets);
-        } else {
-            // Si no hay dietas guardadas en el local storage, las obtenemos de la API
-            dispatch(getDiets())
-                .then((data) => {
-                    setAllDiets(data); // Establecemos las dietas en el estado
-                    localStorage.setItem("diets", JSON.stringify(data)); // Guardamos las dietas en el local storage
-                })
-                .catch((error) => {
-                    console.error("Error fetching diets:", error);
-                });
-        }
+        dispatch(getDiets());
     }, [dispatch]);
 
     //////////////// PAGINADO 1-15
