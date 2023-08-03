@@ -12,6 +12,7 @@
         justify-content: center;
         align-content: center;
         width: 100%;
+        padding-bottom: 50px;
     }
 
     .bigCard {
@@ -24,7 +25,6 @@
         border-radius: 35px;
         margin-top: 80px;
         margin-bottom: 40px;
-        padding-bottom: 30px;
         width: 90%;
         box-shadow: 0px 1px 5px 1px #0303036f;
     }
