@@ -191,7 +191,7 @@ const Form = () => {
                         {errors.image && <p>{errors.image}</p>}
                     </div>
 
-                    <div className={style.inputCont}>
+                    <div className={style.inputContDiets}>
                         <h4 className={style.label}>Diets:</h4>
                         <select
                             onChange={handleSelectDiet}

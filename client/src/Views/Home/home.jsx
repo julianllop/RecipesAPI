@@ -90,7 +90,7 @@ const Home = () => {
                         className={style.botons}
                     >
                         <option value="" default>
-                            Order by Health Score:
+                            Healthscore:
                         </option>
                         <option value="asc_score" className={style.option}>
                             Score (Lower-Higher)
@@ -105,7 +105,7 @@ const Home = () => {
                         className={style.botons}
                     >
                         <option value="" default>
-                            Order by Name:
+                            Name:
                         </option>
                         <option value="asc_name" className={style.option}>
                             Alphabetically (A-Z)

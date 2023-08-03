@@ -7,7 +7,7 @@ const Landing = () => {
         <div className={style.landing}>
             <div className={style.container}>
                 <div className={style.bienvenido}>
-                    <h1>Welcome to my Food App !</h1>
+                    <h1> Recipes API !</h1>
                 </div>
 
                 <Link to="/home">

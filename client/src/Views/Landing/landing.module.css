@@ -5,7 +5,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-		width: 100%;
+        width: 100%;
     }
 
     .container {
@@ -13,7 +13,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-		gap: 30px;
+        gap: 30px;
         background-color: #ffe6d2b5;
         width: 90%;
         height: 400px;
@@ -23,9 +23,7 @@
 
     .bienvenido {
         color: #e26d5c;
-        font-weight: bold;
-        font-size: 9px;
-		width: 90%;
+        width: 90%;
     }
 
     .boton {
@@ -55,7 +53,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-		width: 100%;
+        width: 100%;
     }
 
     .container {
@@ -63,7 +61,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-		gap: 30px;
+        gap: 30px;
         background-color: #ffe6d2b5;
         width: 90%;
         height: 400px;
@@ -74,8 +72,7 @@
     .bienvenido {
         color: #e26d5c;
         font-weight: bold;
-        font-size: 15px;
-		width: 90%;
+        width: 90%;
     }
 
     .boton {
@@ -105,7 +102,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-		width: 100%;
+        width: 100%;
     }
 
     .container {
@@ -113,7 +110,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-		gap: 30px;
+        gap: 30px;
         background-color: #ffe6d2b5;
         width: 60%;
         height: 400px;
@@ -124,8 +121,7 @@
     .bienvenido {
         color: #e26d5c;
         font-weight: bold;
-        font-size: 15px;
-		width: 90%;
+        width: 90%;
     }
 
     .boton {
@@ -155,7 +151,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-		width: 100%;
+        width: 100%;
     }
 
     .container {
@@ -163,7 +159,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-		gap: 30px;
+        gap: 30px;
         background-color: #ffe6d2b5;
         width: 50%;
         height: 400px;
@@ -175,7 +171,7 @@
         color: #e26d5c;
         font-weight: bold;
         font-size: 17.5px;
-		width: 90%;
+        width: 90%;
     }
 
     .boton {
