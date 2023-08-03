@@ -87,7 +87,8 @@
         align-items: center;
         flex-direction: column;
         margin-top: 100px;
-        border: solid 2px #8e1300;
+        border: solid 2px transparent;
+        box-shadow: 0px 1px 2px 1.5px #03030347;
         border-radius: 25px;
     }
 
@@ -147,7 +148,7 @@
     }
 
     .boton {
-        margin-top: 30px;        
+        margin-top: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -254,7 +255,8 @@
         align-items: center;
         flex-direction: column;
         margin-top: 100px;
-        border: solid 2px #8e1300;
+        border: solid 2px transparent;
+        box-shadow: 0px 1px 2px 1.5px #03030347;
         border-radius: 25px;
     }
 
@@ -314,7 +316,7 @@
     }
 
     .boton {
-        margin-top: 30px;        
+        margin-top: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -421,7 +423,8 @@
         align-items: center;
         flex-direction: column;
         margin-top: 100px;
-        border: solid 2px #8e1300;
+        border: solid 2px transparent;
+        box-shadow: 0px 1px 2px 1.5px #03030347;
         border-radius: 25px;
     }
 
@@ -481,7 +484,7 @@
     }
 
     .boton {
-        margin-top: 30px;        
+        margin-top: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
