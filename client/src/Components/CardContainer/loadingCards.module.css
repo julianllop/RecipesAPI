@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border-radius: 18px;
+    border-radius: 15px;
     background-color: #dfdfdfb4;
     height: 350px;
     width: 270px;
@@ -27,7 +27,7 @@
     width: 270px;
     height: 270px;
     aspect-ratio: 2/3;
-    border-radius: 10px;
+    border-radius: 15px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     background-color: #78787836;

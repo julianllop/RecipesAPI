@@ -1,20 +1,20 @@
 .cardcontainer {
-	width: 80vw;
-	display: flex;
-	/* flex-direction: row; */
-	border-radius: 15px;
-	flex-wrap: wrap;
-	gap: 30px;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 30px;
+    width: 80vw;
+    display: flex;
+    /* flex-direction: row; */
+    border-radius: 15px;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 .link {
-	text-decoration: none;
-	color:#723D46;
+    text-decoration: none;
+    color: #723d46;
 }
 
-.container{
-	height: 355px;
+.container {
+    height: 355px;
     width: 275px;
 }
