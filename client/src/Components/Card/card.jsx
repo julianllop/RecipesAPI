@@ -7,12 +7,6 @@ const Card = ({ image, title, diets, healthScore }) => {
 
             <div className={styles.info}>
                 <h3 className={styles.title}>{title}</h3>
-                <div className={styles.container}>
-                    <h5 className={styles.diets}>
-                        {diets &&
-                            diets.map((diet, i) => <li key={i}>{diet}</li>)}
-                    </h5>
-                </div>
             </div>
         </div>
     );

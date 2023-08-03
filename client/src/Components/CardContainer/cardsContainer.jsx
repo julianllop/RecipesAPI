@@ -11,7 +11,8 @@ const CardsContainer = ({ recipes }) => {
                         <Card
                             image={recipe.image}
                             title={recipe.title}
-                            diets={recipe.diet}
+                            healthScore={recipe.healthScore}
+                            // diets={recipe.diet}
                         />
                     </Link>
                 </div>

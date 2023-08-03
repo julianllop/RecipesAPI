@@ -38,6 +38,7 @@ export default function SearchBar() {
                 justifyContent: "center",
                 alignContent: "center",
                 maxWidth: "50%",
+                paddingRight: "10px",
             }}
         >
             <Paper
@@ -47,11 +48,11 @@ export default function SearchBar() {
                     p: "2px 4px",
                     display: "flex",
                     alignItems: "center",
-                    width: "500px   ",
+                    width: "500px",
                     height: "30px",
                     border: "solid 1px #8e1300",
                     borderRadius: "25px",
-                    paddingLeft: "10px", 
+                    paddingLeft: "10px",
                 }}
             >
                 <InputBase

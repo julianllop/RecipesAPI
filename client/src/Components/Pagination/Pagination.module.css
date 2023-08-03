@@ -5,7 +5,7 @@
         align-items: center;
         flex-direction: row;
         gap: 0.2em;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         width: 70%;
     }
 
@@ -97,7 +97,7 @@
         align-items: center;
         flex-direction: row;
         gap: 0.2em;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         width: 70%;
     }
 
