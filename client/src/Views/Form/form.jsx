@@ -143,11 +143,11 @@ const Form = () => {
 
                     <div className={style.inputCont}>
                         {/* <label>Health score: </label> */}
-                        <h4 className={style.label}>Health score:</h4>
+                        <h4 className={style.label}>Healthscore:</h4>
 
                         <input
                             className={style.input}
-                            placeholder="Insert health score:"
+                            placeholder="Insert healthscore:"
                             required
                             type="text"
                             value={form.healthScore}
