@@ -13,7 +13,10 @@ server.name = "API";
 
 server.use(
     cors({
-        origin: ["https://recipes-api-jl.onrender.com"],
+        origin: [
+            "https://recipes-api-jl.onrender.com",
+            "http://localhost:3000",
+        ],
         credentials: true,
     })
 );
