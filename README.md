@@ -1,6 +1,6 @@
-# RecipeAPI
+# RecipesAPI
 
-RecipeAPI is a web application developed using React.js, Express.js, PostgreSQL, and Sequelize. It provides a user-friendly interface for browsing and exploring a wide collection of culinary recipes. The application allows users to filter recipes alphabetically, by price, and by dietary type, and provides detailed information for each recipe.
+RecipesAPI is a web application developed using React.js, Express.js, PostgreSQL, and Sequelize. It provides a user-friendly interface for browsing and exploring a wide collection of culinary recipes. The application allows users to filter recipes alphabetically, by price, and by dietary type, and provides detailed information for each recipe.
 
 ## Features
 
