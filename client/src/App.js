@@ -3,7 +3,7 @@ import { Route, useLocation } from "react-router-dom";
 import { Home, Landing, Form, Detail } from "./Views";
 import NavBar from "./Components/NavBar/navBar";
 import axios from "axios";
-axios.defaults.baseURL = "https://copper-mussel-tam.cyclic.app";
+axios.defaults.baseURL = "recipes-api-server.vercel.app";
 
 function App() {
     return (
