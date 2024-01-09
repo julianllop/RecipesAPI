@@ -3,7 +3,7 @@ import { Route, useLocation } from "react-router-dom";
 import { Home, Landing, Form, Detail } from "./Views";
 import NavBar from "./Components/NavBar/navBar";
 import axios from "axios";
-axios.defaults.baseURL = "https://recipes-api-julianllop-back.onrender.com";
+axios.defaults.baseURL = "https://copper-mussel-tam.cyclic.app";
 
 function App() {
     return (
