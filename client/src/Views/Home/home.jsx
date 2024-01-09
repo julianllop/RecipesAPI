@@ -23,8 +23,7 @@ const Home = () => {
 
     const allRecipes = useSelector((state) => state.recipes);
     const allDiets = useSelector((state) => state.allDiets);
-    console.log("DIETS", allDiets);
-    console.log("RECIPES", allRecipes);
+
     const [orden, setOrden] = useState("");
     const [loading, setLoading] = useState(true);
 
