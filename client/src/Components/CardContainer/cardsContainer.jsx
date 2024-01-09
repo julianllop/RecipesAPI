@@ -5,7 +5,7 @@ import style from "./cardsContainer.module.css";
 const CardsContainer = ({ recipes }) => {
     return (
         <div className={style.cardcontainer}>
-            {recipes?.map((recipe) => (
+            {Array.isArray(recipes) && recipes.length > 0 && recipes?.map((recipe) => (
                 <div key={recipe.id} className={style.container}>
                     <Link className={style.link} to={`/recipes/${recipe.id}`}>
                         <Card
