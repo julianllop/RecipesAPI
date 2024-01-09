@@ -49,7 +49,7 @@ export function getDiets() {
         try {
             const allDiets = await axios.get("/diets");
             const diets = allDiets.data;
-            const listOfDiets = diets.map((diet) => diet.name);
+            const listOfDiets = diets?.map((diet) => diet.name);
             return dispatch({
                 type: GET_DIETS,
                 payload: listOfDiets,
